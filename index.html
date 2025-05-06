@@ -11,6 +11,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 
 <body class="main-text-color">
@@ -28,7 +35,7 @@
     </div>
     <!-- Replace the # inside of the href="#" with your links. -->
     <div class="links-container">
-      <div class="button toggle">Blog post</div>
+      <div class="button toggle"><i class="fa-brands fa-medium"></i> Blog post</div>
       <div class="slidedown">
         <div class="description">
           <h2>Why You Can't Get Your Friends into Fighting Games</h2>
@@ -37,26 +44,47 @@
         </div>
       </div>
 
-      <div class="button toggle">Video</div>
+      <div class="button toggle"><i class="fa-brands fa-youtube"></i> Video</div>
       <div class="slidedown">
         <div class="description">
           <h2>The Mona Lisa of Video Games</h2>
           <p>In this video, I discuss what the equivalent of the Mona Lisa in the medium of video games could be. Which game has as much of an influence as Da Vinci's painting has in the art world?</p>
 
-          <iframe width="370" height="315" 
-          src="https://www.youtube.com/embed/ICf4z2SGo3Q" 
-          title="YouTube video player" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen>
-         </iframe>
+          <style>
+            .embed-container {
+              position: relative;
+              padding-bottom: 177.78%;
+              height: 0;
+              overflow: hidden;
+              max-width: 100%;
+            }
+          
+            .embed-container iframe,
+            .embed-container object,
+            .embed-container embed {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            }
+          </style>
+
+          <div class="embed-container">
+          <iframe 
+            src="https://youtube.com/embed/ICf4z2SGo3Q" 
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+          </div>
 
 
           <a href="https://youtube.com/shorts/ICf4z2SGo3Q?feature=share" class="external-link" target="_blank">Watch</a>
         </div>
       </div>
 
-      <div class="button toggle">Podcast</div>
+      <div class="button toggle"><i class="fa-brands fa-soundcloud"></i> Podcast</div>
       <div class="slidedown">
         <div class="description">
           <h2>The Design of Video Games in the Publishers' Wallet</h2>
@@ -78,7 +106,7 @@
     </div>
 
     <div class="links-container">
-      <a href="https://drive.google.com" class="button" target="_blank">Resume</a>
+      <a href="https://github.com/cal2654" class="button" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
     </div>
 
   </div>
